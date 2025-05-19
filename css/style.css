@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("/img/logo.png");
+    background-color: #13a86263;
+    position: sticky;
+    top: 0;
+}
+
+.imglogo { 
+    border: 5px solid black;
+    height: auto;
+    width: auto;
+    top: 0px;
+
+}
+.contenedor { 
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    border: 5px solid black;
+    height: 300px;
+}
+
+.items {
+    display: flex;
+    justify-content: center;
+    border: 3px solid rgb(221, 19, 19);
+    height: auto;
+    width: 50%;
+}
+
+footer {background-color: #e8a127; /*Verde */}
+
+nav {color: #b3521b; 
+    font-style: italic; color: rgb(61, 28, 246);
+}
+
+
+h1 { color:rgb(2, 5, 29)!important;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: larger;
+    
+    /* Violeta * important para que le de prioridad/}
+    
+
+
+h1 {color: #2cb46e; /*Verde */}
+
