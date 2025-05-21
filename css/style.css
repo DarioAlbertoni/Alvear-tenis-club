@@ -15,13 +15,17 @@ header {
     top: 0px;
 
 }
-.contenedor { 
-    display: flex;
-    justify-content: center;
-    align-items: stretch;
-    border: 5px solid black;
-    height: 150px;
+
+.grilla { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-rows: 1fr;
+    place-items: center;
+    padding: 2px;
+    gap: 20px;
+
 }
+
 
 .items {
     display: flex;
@@ -31,7 +35,7 @@ header {
     width: 50%;
 }
 
-footer {background-color: #e8a127; /*Verde */}
+footer {background-color: #8dc090; /*Verde */}
 
 nav {color: #b3521b; 
     font-style: italic; color: rgb(61, 28, 246);
