@@ -8,42 +8,49 @@
     <!-- ESTILOS PERSONALIZADOS -->
     <link rel="icon" href="./img/icono/raqueta-de-tenis.png">
     <link rel="stylesheet" href="./css/style.css">
-    
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
     
 </head>
 <body>
-    <header>
-        <img src="./img/icono/logo.png" alt="logo del club", class="imglogo">
-        <table>
-
-            <tr>
-                <td>
-
-                    <h1>Alvear Tenis Club</h1>
-                </td>
-            </tr>
-        </table>
-        <nav>
+    <!-- COMIENZO BARRA DE NAVEGACION -->
+<header>
+    <nav class="navbar">
+        <span class="logo">
+                <a href="#">
+            <img src="./img/icono/logo3.png" alt="Logo del club de tenis" />
+                </a>
+        </span>
+        <span class="navbar-menu">
             <ul>
-                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <i class="fas fa-shopping-cart"></i>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="./paginas/alquiler.html">Alquiler de Canchas</a></li>
                 <li><a href="./paginas/clases.html">Clases</a></li>
                 <li><a href="./paginas/Productos.html">Productos</a></li>
                 <li><a href="./paginas/contacto.html">Contacto</a></li>
                 <li><a href="./paginas/ubicacion.html">Ubicación</a></li>
-                </ul>
-
+                <li><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <i class="fas fa-shopping-cart"></i></li>
+            </ul>
+        </span>
         </nav>
     </header>
-    <main>
-        <div class="grilla">
-            <div class="items">
-                <img src="./img/fotos/IMG_6294.jpg" alt="cancha de tenis">
-            </div>
-            <div class="items">
-                <h3>Horarios</h3>
+        <!-- FIN BARRA DE NAVEGACION -->
+    
+    <main id="main_index">
+      <article id="h1_index">
+      <h1>Bienvenido Alvear Tenis Club</h1>
+      </article>
+
+      <!-- COMIENZO INTRO -->
+
+      <article class="article_index" id="article_aboutus">
+        <div id="aboutus_h2_container">
+          <h2>Sobre nosotros</h2>
+        </div>
+        <div id="aboutus_p_container">
+          <p> Nos econtramos ubicados en la calle Rodo 4170   <h3>Horarios</h3>
                 <ul>LUNES       8 a 22 hs</ul>
                 <ul>MARTES      8 a 22 hs</ul>
                 <ul>MIERCOLES   8 a 22 hs</ul>
@@ -51,34 +58,109 @@
                 <ul>VIERNES     8 a 22 hs</ul>
                 <ul>SABADO      8 a 22 hs</ul>
                 <ul>DOMINGO     8 a 22 hs</ul>
-                
-                
-                
-                
-                
-                
-                
-            <div class="items">
-                
+                <a id="link_index" href="./paginas/ubicacion.html">click aquí</a> Para conocer Ubicación.
+          </p>
+        </div>
+      </article>
+      <!-- FIN INTRO -->
 
+      <!-- INICIO RESUMEN CLASES -->
+      
+      <article class="article_index" id="article_clases">
+      <div id="clases_p_container">
+        <p>. Haz <a id="link_index" href="./paginas/clases.html">click aquí</a> para conocer más sobre las clases.
+        </p>
+      </div>
+      <div id="clases_h2_container">
+        <h2>Clases</h2>
+      </div>
+      </article>
+      <!-- FIN RESUMEN CLASES -->
+
+      <!-- INICIO RESUMEN ALQUILER -->
+      <article class="article_index" id="article_alquiler">
+        <div id="alquiler_h2_container">
+          <h2>Alquiler de Canchas</h2>
+        </div>
+        <div id="alquiler_p_container">
+          <p>Contamos con 3 Canchas de polvo de ladrillo para alquilar Haz <a id="link_index" href="/paginas/alquiler.html">click aquí</a> para conocer más sobre Alquiler.
+        </p>
+        </div>
+      </article>
+      <!-- FIN RESUMEN ALQUILER -->
+      
+      <!-- RESEÑAS -->
+      <article class="carousel-container">
+        <h2 class="reseñas_titulo"> NUESTROS CLIENTES SATISFECHOS</h2>
+        <div class="carousel-slide">
+            <div class="comment">
+                <p>Comentario</p>
             </div>
         </div>
-        <section>
+      </article>
+      <div class="buttons-container">
+        <button id="prevBtn" onclick="changeSlide(-1)">Anterior</button>
+        <button id="nextBtn" onclick="changeSlide(1)">Siguiente</button>
+      </div>
+      <!-- FIN RESEÑAS -->
 
-        </section>
+      <!-- FORMULARIO -->
+      <article id="index_form">
+        <h2 class="h2_form">Contáctanos por Consultas</h2>
+        <form class="form_index" onsubmit="return validarFormulario()" action="#">
+            <fieldset class="form_info_personal">
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <div id="nombre-error" class="error-message">El nombre debe contener al menos 3 caracteres.<br>No puede contener caracteres especiales o números</div>
+                <br>
 
-        <section>
-           
-            
-        </section>
-    </main>
-</body>
-<footer>
-    <p>© 2025 XXXXX. Todos los derechos reservados.</p>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <div id="correo-error" class="error-message">Ingrese un correo electrónico válido.</div>
+                <br>
+
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </fieldset>
+
+            <fieldset class="form_destino">
+                <legend>Consultas</legend>
+                <label for="destino">Selecciona su consulta:</label>
+                <select id="destino" name="destino">
+                    <option value="destino1">Clases</option>
+                    <option value="destino2">Alquiler de Canchas</option>
+                    <option value="destino2">Productos</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form_mensaje">
+                <legend>Mensaje</legend>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuentanos en qué podemos ayudarte..." required></textarea>
+            </fieldset>
+            <br>
+
+            <div id="btn_form_container"><input type="submit" value="Enviar" class="form_boton_enviar"></div>
+        </form>
+      </article> 
+      <!-- FIN FORMULARIO -->
+   </main>
+
+    <script src="js/script.js"></script>
+  
+
+ <footer>
+    <div class="redes"></div>
+    <h3 class="derechos">© Albertoni Dario 2025 - Todos los derechos reservados</h3>
     <img src="./img/redes/facebook.jpg"alt="Icono de Facebook" width="60" height="40">
-    <img src="./img/redes/instagram.jpg"alt="Icono de Instagram" width="60" height="40">
+    <a href="https://www.instagram.com/alveartenisclub?igsh=eWVwcDdpM3MycHFm"><img src="./img/redes/instagram.jpg"alt="Icono de Instagram" width="60" height="40"></a>
     <img src="./img/redes/x.jpg"alt="Icono de Twitter" width="60" height="40">
     <img src="./img/redes/youtube.jpg"alt="Icono de Youtube" width="60" height="40">
-    <img src="./img/redes/whatapp.jpg"alt="Icono de Whatapp" width="60" height="40">
-</footer>
+    <a href="https://wa.me/<5491140874783?text=Hola%20quiero%20mas%20informacion"><img src="./img/redes/whatapp.jpg"alt="Icono de Whatapp" width="60" height="40"></a>
+  </footer>
+  
+                
+                
+
 </html>
