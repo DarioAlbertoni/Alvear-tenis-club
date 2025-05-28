@@ -261,6 +261,50 @@ html{
 
 /*FIN ALQUILER INDEX*/
 
+/*PRODUCTOS INDEX*/
+#article_productos{
+  box-sizing: border-box;
+}
+
+#productos_h2_container {
+  width: 50%;
+  display: flex;
+  background: url('../img/productos/pelota2.jpeg') no-repeat center center;
+  background-size: cover;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+#productos_h2_container > h2{
+  font-size: 3rem;
+  text-align: center;
+  color: var(--color-4);
+  background-color: var(--color-3-5);
+  padding: 1rem;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+
+}
+#productos_p_container {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+  background: var(--color-2);
+  justify-content: center;
+  align-items: center;
+}
+#productos_p_container > p{
+  color: var(--color-4);
+  font-size: 1.5rem;
+}
+
+/*FIN PRODUCTOS INDEX*/
+
+
+
 /*FIN MAIN CONTENT*/
 
 /* --- FORM --- */
