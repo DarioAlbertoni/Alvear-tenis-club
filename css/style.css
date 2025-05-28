@@ -661,10 +661,10 @@ footer{
   }
 }
 
-/* --- PAGINA PRODUCTO --- */
+/* --- PAGINA ALQUILER --- */
 
 .contenedor-video {
-  width: 30%;
+  width: 300%;
   max-width: 1000px;
   margin-top: 1rem;
   align-content: center;
@@ -681,6 +681,9 @@ footer{
   -ms-border-radius:;
   -o-border-radius:;
 }
+/* --- PAGINA ALQUILER --- */
+
+/* --- PAGINA PRODUCTO --- */
 
 .contenedor {
     display: flex;

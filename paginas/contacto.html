@@ -37,23 +37,53 @@
         </nav>
     </header>
         <!-- FIN BARRA DE NAVEGACION -->
-    <main>
+   <main id="main_index">
+      <article id="h1_index">
+      <h1>Contacto</h1>
+      </article>
 <!-- modify this form HTML and place wherever you want your form -->
-<form
-action="https://formspree.io/f/mjkwvwyj"
-method="POST"
->
-<label>Nombre:<textarea name="Nombre"></textarea></label><br>
 
-<label> Apellido:<textarea name="Apellido"></textarea></label><br>
 
-<label> Coreo Electronico: <input type="email" name="email"></label><br>
+<form action="https://formspree.io/f/mjkwvwyj"method="POST">
+<article id="index_form">
+        <h2 class="h2_form">Contáctanos por Consultas</h2>
+        <form class="form_index" onsubmit="return validarFormulario()" action="#">
+            <fieldset class="form_info_personal">
+                <legend>Información Personal</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <div id="nombre-error" class="error-message">El nombre debe contener al menos 3 caracteres.<br>No puede contener caracteres especiales o números</div>
+                <br>
 
-<label>Mensaje:<textarea name="message"></textarea></label><br>
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+                <div id="correo-error" class="error-message">Ingrese un correo electrónico válido.</div>
+                <br>
 
-<!-- your other form fields go here -->
-<button type="submit">Send</button>
-</form>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono">
+            </fieldset>
+
+            <fieldset class="form_destino">
+                <legend>Consultas</legend>
+                <label for="destino">Selecciona su consulta:</label>
+                <select id="destino" name="destino">
+                    <option value="destino1">Clases</option>
+                    <option value="destino2">Alquiler de Canchas</option>
+                    <option value="destino2">Productos</option>
+                </select>
+            </fieldset>
+
+            <fieldset class="form_mensaje">
+                <legend>Mensaje</legend>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Cuentanos en qué podemos ayudarte..." required></textarea>
+            </fieldset>
+            <br>
+
+            <div id="btn_form_container"><input type="submit" value="Enviar" class="form_boton_enviar"></div>
+        </form>
+      </article> 
     </main>
 
 </body>
