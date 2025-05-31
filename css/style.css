@@ -702,7 +702,7 @@ footer{
   align-items: center;
 }
 
-#apagalq_pages_p_container {
+#pagalq_pages_p_container {
   width: 50%;
   display: flex;
   padding: 20px;
@@ -719,22 +719,22 @@ footer{
 
 
 .contenedor-video {
-  width: 300%;
+  width: 100%;
   max-width: 1000px;
   margin-top: 1rem;
   align-content: center;
 }
 
 .contenedor-video video {
-  width: auto;
-  height: auto;
+  width: 50%;
+  height: 50%;
   display: block;
   border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  -webkit-border-radius:;
-  -moz-border-radius:;
-  -ms-border-radius:;
-  -o-border-radius:;
+  box-shadow: 0 4px 8px rgba(223, 41, 41, 0.1);
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
 }
 
 .slider-container {
